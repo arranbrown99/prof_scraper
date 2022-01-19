@@ -1,0 +1,13 @@
+Arran Brown
+GUID:2323915b
+Date:07/12/2020
+
+
+I'll be comparing my experience programming in Haskell vs other languages I know like Python and Java.
+I have no previous experience using parsers, outside of ANTLR but I found the Scalpel library to be easy to understand and work with.
+
+Due to the functional nature of Haskell there are no statements like Python or Java for loops, instead we only deal in functions and expressions. We use operations like a map or fold instead of looping over a data structure, while this is concise it can take some more time to understand the logic behind this operation rather than a simple for loop, same can be said about recursion and pattern matching. I do believe that learning to think in this functional style is quite important and serves to improve your programming style even in languages beyond Haskell, I have already seen myself using list comprehensions and lambda functions more frequently in my individual project for example, which is in Python. Monads were a powerful tool used in the coursework, that I admittedly did not fully understand during the Lectures, but hands on experience unpacking them, applying functors over monadic values etc. did help me to get a better intuition of them. Other Haskell features I appreciate is lazy evaluation, I like it since it allows you to abstract away thinking about the values in a function and helps you to think about the type of the function.
+
+I did find myself having difficulties due to the lack of questions on StackOverflow etc, combined with difficult to understand documentation. I did find myself wasting a lot of time solving these errors compared to other languages where there is a myriad  of different online resources that can help. A problem like this can solve itself over time as Haskell is beginning to pick up steam, and become more popular, there will also be a lot more user friendly resources. I would add that the GHC error messages can be a little hard to understand sometimes.
+
+Overall, I am glad to have learned Haskell. There is the possibility I may never write in Haskell again after the exam, but it is a useful skill regardless.

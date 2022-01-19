@@ -1,0 +1,86 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c72da0b9e5dae984b0506efec9c3e3d1a8288e8b56773b17a4aa82110adaa77b
+
+name:           prof-scraper
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/jeremysinger/prof-scraper#readme>
+homepage:       https://github.com/jeremysinger/prof-scraper#readme
+bug-reports:    https://github.com/jeremysinger/prof-scraper/issues
+author:         Arran Brown
+maintainer:     2323915b@student.gla.ac.uk
+copyright:      2020 Arran Brown
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/jeremysinger/prof-scraper
+
+library
+  exposed-modules:
+      ProfScrapeLib
+  other-modules:
+      Paths_prof_scraper
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cassava
+    , http-client
+    , mtl
+    , scalpel
+    , split
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable prof-scraper-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_prof_scraper
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cassava
+    , http-client
+    , mtl
+    , prof-scraper
+    , scalpel
+    , split
+    , text
+    , vector
+  default-language: Haskell2010
+
+test-suite prof-scraper-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_prof_scraper
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cassava
+    , http-client
+    , mtl
+    , prof-scraper
+    , scalpel
+    , split
+    , tasty
+    , tasty-hunit
+    , text
+    , vector
+  default-language: Haskell2010
